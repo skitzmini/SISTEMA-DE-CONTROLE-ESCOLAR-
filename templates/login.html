@@ -1,0 +1,5 @@
+{% extends 'base.html' %}{% block title %}Entrar{% endblock %}{% block content %}
+<div class="login-wrap"><div class="login-brand"><span class="brand-icon">E</span><span>Edu<span class="brand-light">Frequência</span></span></div>
+<div class="login-card"><span class="eyebrow">BEM-VINDO DE VOLTA</span><h1>Acesse sua conta</h1><p class="muted">Entre com seu e-mail e senha para continuar.</p>
+<form method="post"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><label>E-mail<input type="email" name="email" autocomplete="username" required></label><label>Senha<input type="password" name="senha" autocomplete="current-password" required></label><button class="button primary full">Entrar no sistema</button></form>
+<div class="demo-box"><strong>Contas de demonstração</strong><span>Admin: admin@escola.local / Admin123!</span><span>Professor: professor@escola.local / Professor123!</span><span>Aluno: aluno1@escola.local / Aluno123!</span></div></div></div>{% endblock %}
